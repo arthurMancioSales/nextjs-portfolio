@@ -1,4 +1,7 @@
+"use client"
+
 import { Section } from "@/components/ui/section/Section"
+import Spline from "@splinetool/react-spline"
 import { Code2, Github, Instagram, Linkedin } from "lucide-react"
 import Link from "next/link"
 
@@ -8,7 +11,7 @@ export function Hero() {
             <div className="flex flex-col justify-center w-full h-full items-center">
                 <div className="flex w-full justify-between items-center">
                     <div className="h-full flex flex-col justify-between">
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2 pt-16">
                             <h2 className="font-bold text-6xl">
                                 Hey, I&apos;m Arthur!
                             </h2>
@@ -19,7 +22,20 @@ export function Hero() {
 
                         <p className="font-semibold">Application ID: </p>
                     </div>
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4 relative">
+                        <Spline
+                            scene="https://prod.spline.design/fJakkCH-CwLucvuK/scene.splinecode"
+                            className="scale-[0.3] absolute bottom-1/4 right-1/3"
+                        />
+                        <Spline
+                            scene="https://prod.spline.design/dfw8exBixtXB-GMk/scene.splinecode"
+                            className="scale-[0.3] absolute bottom-1/3 left-1/3"
+                        />
+                        <Spline
+                            scene="https://prod.spline.design/TwctAEiMaLnOOhc7/scene.splinecode"
+                            className="scale-[0.3] absolute left-1/4 top-1/3"
+                        />
+
                         <svg
                             width="457"
                             height="415"
