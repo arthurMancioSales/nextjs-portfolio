@@ -21,11 +21,6 @@ export function Navbar() {
                             About me
                         </ScrollAnchor>
                     </li>
-                    <li>
-                        <ScrollAnchor target="#extraSection">
-                            Extra Activities
-                        </ScrollAnchor>
-                    </li>
                 </ul>
             </nav>
         </div>

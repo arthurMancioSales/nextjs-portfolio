@@ -16,7 +16,7 @@ export function Hero() {
                                 Hey, I&apos;m Arthur!
                             </h2>
                             <p className="font-light">
-                                Discover my Academic Portfolio
+                                Get to know me a bit more
                             </p>
                         </div>
 
@@ -24,7 +24,7 @@ export function Hero() {
                     </div>
                     <div className="flex flex-col gap-4 relative">
                         <Spline
-                            scene="https://prod.spline.design/fJakkCH-CwLucvuK/scene.splinecode"
+                            scene="https://draft.spline.design/6bph1mrMZpmIrq-4/scene.splinecode"
                             className="scale-[0.3] absolute bottom-1/4 right-1/3"
                         />
                         <Spline
@@ -33,7 +33,11 @@ export function Hero() {
                         />
                         <Spline
                             scene="https://prod.spline.design/TwctAEiMaLnOOhc7/scene.splinecode"
-                            className="scale-[0.3] absolute left-1/4 top-1/3"
+                            className="scale-[0.3] absolute left-[40%] top-[20%]"
+                        />
+                        <Spline
+                            scene="https://prod.spline.design/OCr8oJ0ayRVGrYdw/scene.splinecode"
+                            className="scale-[0.3] absolute right-1/4 top-1/4"
                         />
 
                         <svg
