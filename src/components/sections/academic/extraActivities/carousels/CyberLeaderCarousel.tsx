@@ -25,7 +25,7 @@ export function CyberLeaderCarousel() {
                         key={i}
                         className="min-w-full max-w-full flex md:flex-row lg:flex-row flex-col"
                     >
-                        <div className="relative w-full h-full bg-primary/20 rounded-tr-2xl rounded-bl-2xl p-4">
+                        <div className="relative w-full h-full border border-primary bg bg-primary/20 backdrop-blur-[3px] rounded-tr-2xl rounded-bl-2xl p-4">
                             <p className="indent-6 h-full">
                                 {page.description}
                             </p>
