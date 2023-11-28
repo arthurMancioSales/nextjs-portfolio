@@ -57,25 +57,25 @@ export function Hero() {
                                 <Linkedin
                                     className="bg-foreground text-background p-2 rounded-md hover:bg-secondary hover:text-foreground transition-colors duration-300"
                                     size={40}
-                                ></Linkedin>
+                                />
                             </Link>
                             <Link href="https://www.instagram.com/mancioarthur/">
                                 <Instagram
                                     className="bg-foreground text-background p-2 rounded-md hover:bg-secondary hover:text-foreground transition-colors duration-300"
                                     size={40}
-                                ></Instagram>
+                                />
                             </Link>
                             <Link href="https://github.com/arthurMancioSales/">
                                 <Github
                                     className="bg-foreground text-background p-2 rounded-md hover:bg-secondary hover:text-foreground transition-colors duration-300"
                                     size={40}
-                                ></Github>
+                                />
                             </Link>
                             <Link href="https://github.com/arthurMancioSales/nextjs-portfolio">
                                 <Code2
                                     className="bg-foreground text-background p-2 rounded-md hover:bg-secondary hover:text-foreground transition-colors duration-300"
                                     size={40}
-                                ></Code2>
+                                />
                             </Link>
                         </div>
                     </div>
@@ -84,7 +84,7 @@ export function Hero() {
                     <div
                         id="mouseIcon"
                         className="w-8 h-12 border-foreground border-solid border-[3px] rounded-[60px] relative"
-                    ></div>
+                    />
                     <small>scroll down</small>
                 </div>
             </div>

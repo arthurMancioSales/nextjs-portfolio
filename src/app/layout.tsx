@@ -24,7 +24,7 @@ export default function RootLayout({
                     defaultTheme="system"
                     enableSystem
                 >
-                    <Navbar></Navbar>
+                    <Navbar />
                     {children}
                 </ThemeProvider>
             </body>

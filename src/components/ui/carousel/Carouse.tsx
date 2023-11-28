@@ -30,7 +30,7 @@ export default function Carousel({
                     key={i}
                     id={`page${i}`}
                     onClick={() => scrollToPage(i)}
-                ></div>,
+                />,
             )
         }
 

@@ -30,7 +30,7 @@ export default function ExtraActivities() {
                     src={topWave}
                     alt="top wave figure"
                     className="absolute top-0 bg-background"
-                ></Image>
+                />
                 <div className="z-10 flex flex-col gap-12 w-full justify-center">
                     <h2 className="uppercase font-bold text-5xl text-center">
                         extra activities
@@ -44,7 +44,7 @@ export default function ExtraActivities() {
                             )}
                             onClick={() => setActiveActivity("cyber")}
                         >
-                            <Monitor className="w-16 h-16"></Monitor>
+                            <Monitor className="w-16 h-16" />
                             <p className="capitalize font-semibold text-xl">
                                 cyber leader
                             </p>
@@ -56,7 +56,7 @@ export default function ExtraActivities() {
                             )}
                             onClick={() => setActiveActivity("maker")}
                         >
-                            <Scale3d className="w-16 h-16"></Scale3d>
+                            <Scale3d className="w-16 h-16" />
                             <p className="capitalize font-semibold text-xl">
                                 maker leader
                             </p>
@@ -80,7 +80,7 @@ export default function ExtraActivities() {
                             )}
                             onClick={() => setActiveActivity("robotics")}
                         >
-                            <GiRobotGrab className="w-16 h-16"></GiRobotGrab>
+                            <GiRobotGrab className="w-16 h-16" />
                             <p className="capitalize font-semibold text-xl">
                                 Robotics
                             </p>
@@ -92,7 +92,7 @@ export default function ExtraActivities() {
                             )}
                             onClick={() => setActiveActivity("alura")}
                         >
-                            <Code2 className="w-16 h-16"></Code2>
+                            <Code2 className="w-16 h-16" />
                             <p className="capitalize font-semibold text-xl">
                                 Alura
                             </p>
@@ -102,54 +102,54 @@ export default function ExtraActivities() {
                         <div className="col-span-3">
                             {activeActivity === "cyber" && (
                                 <div className="animate-in fade-in duration-500">
-                                    <CyberLeaderCarousel></CyberLeaderCarousel>
+                                    <CyberLeaderCarousel />
                                 </div>
                             )}
                             {activeActivity === "maker" && (
                                 <div className="animate-in fade-in duration-500">
-                                    <MakerLeaderCarousel></MakerLeaderCarousel>
+                                    <MakerLeaderCarousel />
                                 </div>
                             )}
                             {activeActivity === "mit" && (
                                 <div className="animate-in fade-in duration-500">
-                                    <MITxCarousel></MITxCarousel>
+                                    <MITxCarousel />
                                 </div>
                             )}
                             {activeActivity === "robotics" && (
                                 <div className="animate-in fade-in duration-500">
-                                    <RoboticsCarousel></RoboticsCarousel>
+                                    <RoboticsCarousel />
                                 </div>
                             )}
                             {activeActivity === "alura" && (
                                 <div className="animate-in fade-in duration-500">
-                                    <AluraCarousel></AluraCarousel>
+                                    <AluraCarousel />
                                 </div>
                             )}
                         </div>
                         <div className="col-span-2">
                             {activeActivity === "cyber" && (
                                 <div className="animate-in fade-in duration-500">
-                                    <CyberLeaderGrid></CyberLeaderGrid>
+                                    <CyberLeaderGrid />
                                 </div>
                             )}
                             {activeActivity === "maker" && (
                                 <div className="animate-in fade-in duration-500">
-                                    <MakerLeaderGrid></MakerLeaderGrid>
+                                    <MakerLeaderGrid />
                                 </div>
                             )}
                             {activeActivity === "mit" && (
                                 <div className="animate-in fade-in duration-500">
-                                    <MITxGrid></MITxGrid>
+                                    <MITxGrid />
                                 </div>
                             )}
                             {activeActivity === "robotics" && (
                                 <div className="animate-in fade-in duration-500">
-                                    <RoboticsGrid></RoboticsGrid>
+                                    <RoboticsGrid />
                                 </div>
                             )}
                             {activeActivity === "alura" && (
                                 <div className="animate-in fade-in duration-500">
-                                    <AluraGrid></AluraGrid>
+                                    <AluraGrid />
                                 </div>
                             )}
                         </div>
@@ -159,7 +159,7 @@ export default function ExtraActivities() {
                     src={bottomWave}
                     alt="bottom wave figure"
                     className="absolute bottom-0 fill-primary"
-                ></Image>
+                />
             </Section>
         </div>
     )
