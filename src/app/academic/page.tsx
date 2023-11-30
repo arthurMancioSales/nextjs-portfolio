@@ -1,6 +1,6 @@
 import { ScrollWrapper } from "@/components/ScrollWrapper/ScrollWrapper"
-import ExtraActivities from "@/components/sections/academic/extraActivities/ExtraActivities"
-import Volunteer from "@/components/sections/academic/volunteer/Volunteer"
+import ExtraActivities from "@/sections/academic/extraActivities/ExtraActivities"
+import Volunteer from "@/sections/academic/volunteer/Volunteer"
 
 export default function AcademicPortfolio() {
     return (

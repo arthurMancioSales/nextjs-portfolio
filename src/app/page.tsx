@@ -1,6 +1,6 @@
 import { ScrollWrapper } from "@/components/ScrollWrapper/ScrollWrapper"
-import { Hero } from "@/app/(sections)/(heroSection)/Hero"
-import { About } from "./(sections)/(aboutSection)/About"
+import { About } from "../sections/common/about/About"
+import { Hero } from "../sections/common/hero/Hero"
 
 export default function Home() {
     return (
