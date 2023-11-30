@@ -2,8 +2,7 @@
 
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
-import { ThemeProvider } from "next-themes"
-import { useLayoutEffect, useRef, useState } from "react"
+import { useLayoutEffect, useRef } from "react"
 
 gsap.registerPlugin(ScrollTrigger)
 

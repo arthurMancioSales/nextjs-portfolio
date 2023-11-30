@@ -24,13 +24,13 @@ export default function ExtraActivities() {
     const [activeActivity, setActiveActivity] = useState("cyber")
 
     return (
-        <div className="h-screen w-screen flex items-center justify-center flex-col">
-            <Section className="h-full w-full flex flex-col items-center relative bg-secondary">
-                <Image
-                    src={topWave}
-                    alt="top wave figure"
-                    className="absolute top-0 bg-background"
-                />
+        <div className="h-screen w-screen flex items-center justify-center flex-col bg-secondary overflow-clip relative">
+            <Image
+                src={topWave}
+                alt="top wave figure"
+                className="absolute top-0 bg-background"
+            />
+            <Section className="h-full w-full flex flex-col items-center relative ">
                 <div className="z-10 flex flex-col gap-12 w-full justify-center">
                     <h2 className="uppercase font-bold text-5xl text-center">
                         extra activities
@@ -101,66 +101,66 @@ export default function ExtraActivities() {
                     <div className="grid h-full w-full grid-cols-5 gap-16">
                         <div className="col-span-3">
                             {activeActivity === "cyber" && (
-                                <div className="animate-in fade-in duration-500">
+                                <div className="animate-in fade-in duration-500 h-full">
                                     <CyberLeaderCarousel />
                                 </div>
                             )}
                             {activeActivity === "maker" && (
-                                <div className="animate-in fade-in duration-500">
+                                <div className="animate-in fade-in duration-500 h-full">
                                     <MakerLeaderCarousel />
                                 </div>
                             )}
                             {activeActivity === "mit" && (
-                                <div className="animate-in fade-in duration-500">
+                                <div className="animate-in fade-in duration-500 h-full">
                                     <MITxCarousel />
                                 </div>
                             )}
                             {activeActivity === "robotics" && (
-                                <div className="animate-in fade-in duration-500">
+                                <div className="animate-in fade-in duration-500 h-full">
                                     <RoboticsCarousel />
                                 </div>
                             )}
                             {activeActivity === "alura" && (
-                                <div className="animate-in fade-in duration-500">
+                                <div className="animate-in fade-in duration-500 h-full">
                                     <AluraCarousel />
                                 </div>
                             )}
                         </div>
                         <div className="col-span-2">
                             {activeActivity === "cyber" && (
-                                <div className="animate-in fade-in duration-500">
+                                <div className="animate-in fade-in duration-500 h-full">
                                     <CyberLeaderGrid />
                                 </div>
                             )}
                             {activeActivity === "maker" && (
-                                <div className="animate-in fade-in duration-500">
+                                <div className="animate-in fade-in duration-500 h-full">
                                     <MakerLeaderGrid />
                                 </div>
                             )}
                             {activeActivity === "mit" && (
-                                <div className="animate-in fade-in duration-500">
+                                <div className="animate-in fade-in duration-500 h-full">
                                     <MITxGrid />
                                 </div>
                             )}
                             {activeActivity === "robotics" && (
-                                <div className="animate-in fade-in duration-500">
+                                <div className="animate-in fade-in duration-500 h-full">
                                     <RoboticsGrid />
                                 </div>
                             )}
                             {activeActivity === "alura" && (
-                                <div className="animate-in fade-in duration-500">
+                                <div className="animate-in fade-in duration-500 h-full">
                                     <AluraGrid />
                                 </div>
                             )}
                         </div>
                     </div>
                 </div>
-                <Image
-                    src={bottomWave}
-                    alt="bottom wave figure"
-                    className="absolute bottom-0 fill-primary"
-                />
             </Section>
+            <Image
+                src={bottomWave}
+                alt="bottom wave figure"
+                className="absolute bottom-0 fill-primary"
+            />
         </div>
     )
 }

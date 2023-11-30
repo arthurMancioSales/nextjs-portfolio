@@ -1,27 +1,19 @@
-import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
+import { HTMLAttributes, forwardRef } from "react"
 
-const sectionVariants = cva("min-w-[100vw] h-screen px-20 pt-20", {
-    variants: {
-        variant: {
-            default: "bg-background text-foreground-foreground",
-            secondary: "bg-secondary text-secondary-foreground",
-            ghost: "bg-transparent text-foreground-foreground",
-        },
-    },
-    defaultVariants: {
-        variant: "default",
-    },
-})
-
-export interface ISectionProps
-    extends React.AllHTMLAttributes<HTMLDivElement>,
-        VariantProps<typeof sectionVariants> {}
-
-export function Section({ children, variant, className, id }: ISectionProps) {
-    return (
-        <div className={cn(sectionVariants({ variant, className }))} id={id}>
-            {children}
+const Section = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
+    ({ className, children, ...props }, ref) => (
+        <div className="w-screen">
+            <div
+                className={cn("h-screen max-w-7xl mx-auto py-16", className)}
+                {...props}
+                ref={ref}
+            >
+                {children}
+            </div>
         </div>
-    )
-}
+    ),
+)
+Section.displayName = "Section"
+
+export { Section }
