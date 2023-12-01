@@ -93,7 +93,7 @@ export default function FutureSeeds() {
                     </div>
                 </div>
                 <div className="flex gap-3">
-                    <div className="h-full gap-3 bg-blue-400/20 grid grid-rows-6 grid-cols-6 aspect-square">
+                    <div className="h-full gap-3 grid grid-rows-6 grid-cols-6 aspect-square">
                         <div className="bg-accent relative row-span-4 col-span-2">
                             {/* <Image></Image> */}
                         </div>
@@ -108,6 +108,92 @@ export default function FutureSeeds() {
                         </div>
                     </div>
                     <div className="bg-accent aspect-[9/16] h-full" />
+                </div>
+            </Section>
+
+            <Section className="w-fit flex gap-16">
+                <div className="flex flex-col gap-4 items-center">
+                    <div className="h-2/3 flex gap-12">
+                        <div className="h-full gap-3 grid grid-rows-4 grid-cols-2 aspect-square">
+                            <div className="col-span-1 row-span-1 bg-accent aspect-square">
+                                {/* <Image></Image> */}
+                            </div>
+                            <div className="col-span-1 row-span-1 bg-accent aspect-square">
+                                {/* <Image></Image> */}
+                            </div>
+                            <div className="col-span-1 row-span-1 row-start-3 col-start-1 bg-accent aspect-square">
+                                {/* <Image></Image> */}
+                            </div>
+                            <div className="col-span-1 row-span-1 row-start-3 col-start-2 bg-accent aspect-square">
+                                {/* <Image></Image> */}
+                            </div>
+                        </div>
+                        <div className="h-full flex flex-col justify-between">
+                            <div className="flex flex-col gap-4">
+                                <h2 className="font-bold text-3xl text-foreground">
+                                    As a leader
+                                </h2>
+                                <p className="text-foreground indent-6">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Nobis id odio reiciendis
+                                    temporibus sint deleniti molestias quisquam
+                                    pariatur non error consequuntur unde quod
+                                    placeat porro maxime aperiam fugiat
+                                    repudiandae quasi, cumque optio obcaecati
+                                    eius sunt eaque?
+                                </p>
+                                <p className="text-foreground indent-6">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Modi repudiandae
+                                    voluptatem fugit suscipit tenetur sapiente
+                                    dignissimos deleniti, eligendi dolorum illo
+                                    animi voluptatum maiores repellendus magni
+                                    temporibus reiciendis, labore magnam
+                                    laboriosam doloribus praesentium officiis.
+                                    Officia recusandae repellat impedit debitis
+                                    quam reiciendis et? Voluptate quas quia
+                                    tempora mollitia explicabo consequatur totam
+                                    quo!
+                                </p>
+                                <p className="text-foreground indent-6">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Modi repudiandae
+                                    voluptatem fugit suscipit tenetur sapiente
+                                    dignissimos deleniti, eligendi dolorum illo
+                                    animi voluptatum maiores repellendus magni
+                                    temporibus reiciendis, labore magnam
+                                    laboriosam doloribus praesentium officiis.
+                                    Officia recusandae repellat impedit debitis
+                                    quam reiciendis et? Voluptate quas quia
+                                    tempora mollitia explicabo consequatur totam
+                                    quo!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-3">
+                        <p className="text-foreground indent-6">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Amet, quo beatae blanditiis facere et esse
+                            consequuntur dignissimos ducimus ut sed? Asperiores
+                            repellendus voluptatem amet explicabo perferendis
+                            eveniet, nam dolores laudantium dolorem, dolor cum
+                            culpa excepturi iusto a iure mollitia aliquid beatae
+                            suscipit perspiciatis voluptatum aut vero
+                            voluptatibus totam rem. Impedit ipsam consequuntur
+                            itaque eos, ratione porro. Consequuntur accusantium
+                            soluta ipsum! Doloremque repellat, quasi explicabo
+                            sapiente tempore odit laborum quos ex officiis!
+                            Officia eveniet numquam sint?
+                        </p>
+                        <p className="text-foreground indent-6">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Amet, quo beatae blanditiis facere et esse
+                            consequuntur dignissimos ducimus ut sed? Asperiores
+                            repellendus voluptatem amet explicabo perferendis
+                            eveniet, nam dolores laudantium dolorem.
+                        </p>
+                    </div>
                 </div>
             </Section>
         </div>
