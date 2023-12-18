@@ -1,25 +1,25 @@
-import { Button } from "@/components/ui/button/button"
-import { Section } from "@/components/ui/section/Section"
-import { GraduationCap } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
-import manOnComputer from "public/images/aboutSection/man-on-computer.png"
+import { Button } from "@/components/ui/button/button";
+import { Section } from "@/components/ui/section/Section";
+import { GraduationCap } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import manOnComputer from "public/images/aboutSection/man-on-computer.png";
 
 export function About() {
     return (
         <Section id="aboutSection">
-            <div className="flex flex-col justify-between items-center h-full w-full">
+            <div className="flex h-full w-full flex-col items-center justify-between">
                 <div className="flex flex-col items-center justify-center gap-2">
-                    <h2 className="font-semibold text-7xl capitalize">
+                    <h2 className="text-7xl font-semibold capitalize">
                         about me
                     </h2>
-                    <p className="font-medium text-2xl max-w-[650px] text-center">
+                    <p className="max-w-[650px] text-center text-2xl font-medium">
                         Insistent, adventurous, and enthusiastic are different
                         ways to describe the mess I am.
                     </p>
                 </div>
-                <div className="flex w-full justify-between h-full items-center">
-                    <div className="max-w-2xl flex justify-center flex-col items-start gap-4">
+                <div className="flex h-full w-full items-center justify-between">
+                    <div className="flex max-w-2xl flex-col items-start justify-center gap-4">
                         <div>
                             <p className="indent-6">
                                 From a young age, I have always believed that
@@ -60,7 +60,7 @@ export function About() {
                         </div>
                     </div>
                     <div className="">
-                        <div className="relative w-72 h-80">
+                        <div className="relative h-80 w-72">
                             {/* <Image alt="" fill src={manOnComputer}></Image> */}
                             <small className="absolute -bottom-2 text-xs">
                                 Illustration by{" "}
@@ -77,5 +77,5 @@ export function About() {
                 </div>
             </div>
         </Section>
-    )
+    );
 }

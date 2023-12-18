@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils"
-import { HTMLAttributes, forwardRef } from "react"
+import { cn } from "@/lib/utils";
+import { HTMLAttributes, forwardRef } from "react";
 
 const Section = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
     ({ className, children, ...props }, ref) => (
@@ -13,7 +13,7 @@ const Section = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
             </div>
         </div>
     ),
-)
-Section.displayName = "Section"
+);
+Section.displayName = "Section";
 
-export { Section }
+export { Section };

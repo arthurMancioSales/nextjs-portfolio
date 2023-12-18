@@ -1,27 +1,27 @@
-"use client"
+"use client";
 
-import gsap from "gsap"
-import ScrollTrigger from "gsap/ScrollTrigger"
-import { useLayoutEffect, useRef } from "react"
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useLayoutEffect, useRef } from "react";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 export function ScrollWrapper({ children }: { children: React.ReactNode }) {
-    const carouselRef = useRef<HTMLDivElement | null>(null)
+    const carouselRef = useRef<HTMLDivElement | null>(null);
 
     useLayoutEffect(() => {
         if (carouselRef) {
-            const carousel = document.querySelector("#carousel")
+            const carousel = document.querySelector("#carousel");
             function getLeftScrollAmount() {
-                const carouselWidth = (carousel && carousel.scrollWidth) || 0
-                return -(carouselWidth - window.innerWidth)
+                const carouselWidth = (carousel && carousel.scrollWidth) || 0;
+                return -(carouselWidth - window.innerWidth);
             }
 
             const tween = gsap.to(carousel, {
                 x: getLeftScrollAmount,
                 duration: 3,
                 ease: "none",
-            })
+            });
 
             const scroll = ScrollTrigger.create({
                 trigger: "#carouselWrapper",
@@ -30,14 +30,14 @@ export function ScrollWrapper({ children }: { children: React.ReactNode }) {
                 animation: tween,
                 scrub: 1,
                 invalidateOnRefresh: true,
-            })
+            });
 
             return () => {
-                tween.kill()
-                scroll.kill(false)
-            }
+                tween.kill();
+                scroll.kill(false);
+            };
         }
-    }, [])
+    }, []);
 
     return (
         <div className="">
@@ -51,5 +51,5 @@ export function ScrollWrapper({ children }: { children: React.ReactNode }) {
                 </div>
             </div>
         </div>
-    )
+    );
 }

@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import Carousel from "@/components/ui/carousel/Carouse"
+import Carousel from "@/components/ui/carousel/Carouse";
 
 const carouselPages = [
     {
@@ -14,7 +14,7 @@ const carouselPages = [
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id neque aliquam vestibulum morbi blandit cursus risus at. Id aliquet risus feugiat in ante metus. Felis imperdiet proin fermentum leo vel orci porta non. Amet justo donec enim diam vulputate. Massa tincidunt dui ut ornare lectus sit amet. Auctor neque vitae tempus quam pellentesque nec. Viverra mauris in aliquam sem. Varius morbi enim nunc faucibus a. Amet luctus venenatis lectus magna fringilla urna porttitor.",
     },
-]
+];
 
 export function CyberLeaderCarousel() {
     return (
@@ -23,16 +23,16 @@ export function CyberLeaderCarousel() {
                 return (
                     <div
                         key={i}
-                        className="min-w-full max-w-full flex md:flex-row lg:flex-row flex-col"
+                        className="flex min-w-full max-w-full flex-col md:flex-row lg:flex-row"
                     >
-                        <div className="relative w-full h-full border border-primary bg bg-primary/20 backdrop-blur-[3px] rounded-tr-2xl rounded-bl-2xl p-4">
-                            <p className="indent-6 h-full">
+                        <div className="relative h-full w-full rounded-bl-2xl rounded-tr-2xl border border-primary bg-primary/20 p-4 backdrop-blur-[3px]">
+                            <p className="h-full indent-6">
                                 {page.description}
                             </p>
                         </div>
                     </div>
-                )
+                );
             })}
         </Carousel>
-    )
+    );
 }

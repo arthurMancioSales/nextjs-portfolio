@@ -3,16 +3,16 @@ import {
     CardContent,
     CardHeader,
     CardTitle,
-} from "@/components/ui/card/card"
-import { ScrollText } from "lucide-react"
+} from "@/components/ui/card/card";
+import { ScrollText } from "lucide-react";
 
 export default function Horizon() {
     return (
-        <div className="w-screen h-full flex gap-16">
+        <div className="flex h-full w-screen gap-16">
             <Card className="w-1/4">
                 <CardHeader>
                     <CardTitle>
-                        <ScrollText className="w-36 h-36 text-foreground mx-auto" />
+                        <ScrollText className="mx-auto h-36 w-36 text-foreground" />
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -24,8 +24,8 @@ export default function Horizon() {
                     </p>
                 </CardContent>
             </Card>
-            <div className="w-3/4 flex flex-col justify-between gap-3">
-                <h2 className="uppercase font-bold text-3xl">Horizon 2100</h2>
+            <div className="flex w-3/4 flex-col justify-between gap-3">
+                <h2 className="text-3xl font-bold uppercase">Horizon 2100</h2>
                 <div className="flex flex-col gap-1">
                     <p className="indent-6 leading-6 text-foreground/80">
                         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -55,10 +55,10 @@ export default function Horizon() {
                         corrupti inventore!
                     </p>
                 </div>
-                <div className="self-end bg-accent aspect-square w-20">
+                <div className="aspect-square w-20 self-end bg-accent">
                     {/* <Image src={} alt="" fill className="object-cover"></Image> */}
                 </div>
             </div>
         </div>
-    )
+    );
 }

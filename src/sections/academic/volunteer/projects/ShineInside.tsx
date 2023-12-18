@@ -1,23 +1,23 @@
-import { Section } from "@/components/ui/section/Section"
-import futureSeeds from "public/images/extraActivities/futureSeeds/futureSeedsLogo.png"
-import Image from "next/image"
+import { Section } from "@/components/ui/section/Section";
+import futureSeeds from "public/images/extraActivities/futureSeeds/futureSeedsLogo.png";
+import Image from "next/image";
 
 export default function ShineInside() {
     return (
         <div className="flex">
-            <Section className="w-screen flex flex-col items-center relative justify-center gap-12">
-                <h2 className="uppercase font-bold text-5xl text-center">
+            <Section className="relative flex w-screen flex-col items-center justify-center gap-12">
+                <h2 className="text-center text-5xl font-bold uppercase">
                     Shine Inside
                 </h2>
-                <div className="grid grid-cols-5 w-full h-4/5 grid-rows-1 gap-16">
-                    <div className="grid grid-cols-2 gap-3 aspect-square h-full col-span-2">
-                        <div className="bg-accent col-span-2" />
+                <div className="grid h-4/5 w-full grid-cols-5 grid-rows-1 gap-16">
+                    <div className="col-span-2 grid aspect-square h-full grid-cols-2 gap-3">
+                        <div className="col-span-2 bg-accent" />
                         <div className="col-span-2 flex gap-3">
-                            <div className="bg-accent aspect-square" />
-                            <div className="bg-accent aspect-square" />
+                            <div className="aspect-square bg-accent" />
+                            <div className="aspect-square bg-accent" />
                         </div>
                     </div>
-                    <div className="col-span-3 relative">
+                    <div className="relative col-span-3">
                         <p className="w-3/5 indent-6">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Inventore amet fugiat eos cumque impedit nulla
@@ -47,7 +47,7 @@ export default function ShineInside() {
                             fugiat.
                         </p>
                         <div className="absolute right-0 top-0">
-                            <div className="relative w-56 h-56">
+                            <div className="relative h-56 w-56">
                                 <Image
                                     src={futureSeeds}
                                     className="object-cover"
@@ -60,13 +60,13 @@ export default function ShineInside() {
                 </div>
             </Section>
 
-            <Section className="w-fit flex gap-16">
-                <div className="h-full flex flex-col justify-between">
+            <Section className="flex w-fit gap-16">
+                <div className="flex h-full flex-col justify-between">
                     <div className="flex flex-col gap-4">
-                        <h2 className="font-bold text-3xl text-foreground">
+                        <h2 className="text-3xl font-bold text-foreground">
                             Social media
                         </h2>
-                        <p className="text-foreground indent-6">
+                        <p className="indent-6 text-foreground">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Nobis id odio reiciendis temporibus sint
                             deleniti molestias quisquam pariatur non error
@@ -74,7 +74,7 @@ export default function ShineInside() {
                             fugiat repudiandae quasi, cumque optio obcaecati
                             eius sunt eaque?
                         </p>
-                        <p className="text-foreground indent-6">
+                        <p className="indent-6 text-foreground">
                             Nobis id odio reiciendis temporibus sint deleniti
                             molestias quisquam pariatur non error consequuntur
                             unde quod placeat porro maxime aperiam fugiat
@@ -84,35 +84,35 @@ export default function ShineInside() {
                     </div>
 
                     <div className="grid grid-cols-3 gap-3">
-                        <div className="bg-accent col-span-1 aspect-square relative">
+                        <div className="relative col-span-1 aspect-square bg-accent">
                             {/* <Image></Image> */}
                         </div>
-                        <div className="bg-accent col-span-1 aspect-square relative">
+                        <div className="relative col-span-1 aspect-square bg-accent">
                             {/* <Image></Image> */}
                         </div>
-                        <div className="bg-accent col-span-1 aspect-square relative">
+                        <div className="relative col-span-1 aspect-square bg-accent">
                             {/* <Image></Image> */}
                         </div>
                     </div>
                 </div>
                 <div className="flex gap-3">
-                    <div className="h-full gap-3 grid grid-rows-6 grid-cols-6 aspect-square">
-                        <div className="bg-accent relative row-span-4 col-span-2">
+                    <div className="grid aspect-square h-full grid-cols-6 grid-rows-6 gap-3">
+                        <div className="relative col-span-2 row-span-4 bg-accent">
                             {/* <Image></Image> */}
                         </div>
                         <div className="col-span-4 row-span-2 flex gap-3">
-                            <div className="bg-accent aspect-square w-full" />
+                            <div className="aspect-square w-full bg-accent" />
                         </div>
-                        <div className="bg-accent aspect-square row-start-3 col-start-3 col-span-4">
+                        <div className="col-span-4 col-start-3 row-start-3 aspect-square bg-accent">
                             {/* <Image></Image> */}
                         </div>
-                        <div className="aspect-square row-start-5 bg-accent col-span-2">
+                        <div className="col-span-2 row-start-5 aspect-square bg-accent">
                             {/* <Image></Image> */}
                         </div>
                     </div>
-                    <div className="bg-accent aspect-[9/16] h-full" />
+                    <div className="aspect-[9/16] h-full bg-accent" />
                 </div>
             </Section>
         </div>
-    )
+    );
 }

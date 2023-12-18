@@ -1,15 +1,18 @@
 {
     "extends": [
         "@rocketseat/eslint-config/next",
-        "next/core-web-vitals"
+        "next/core-web-vitals",
+        "plugin:tailwindcss/recommended"
     ],
     "rules": {
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "warn",
         "prettier/prettier": [
             "error",
             {
                 "trailingComma": "all",
                 "tabWidth": 4,
-                "semi": false,
+                "semi": true,
                 "singleQuote": false,
                 "bracketSpacing": true,
                 "eslintIntegration": true,

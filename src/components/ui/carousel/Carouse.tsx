@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { cn } from "@/lib/utils"
-import { useState } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { cn } from "@/lib/utils";
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export interface carouselProps extends React.HTMLAttributes<HTMLDivElement> {
-    pageCount: number
+    pageCount: number;
 }
 
 export default function Carousel({
@@ -14,10 +14,10 @@ export default function Carousel({
     className,
     ...props
 }: carouselProps) {
-    const [carouselIndex, setCarouselIndex] = useState(0)
+    const [carouselIndex, setCarouselIndex] = useState(0);
 
     function renderPagination() {
-        const pages = []
+        const pages = [];
         for (let i = 0; i < pageCount; i++) {
             pages.push(
                 <div
@@ -31,32 +31,32 @@ export default function Carousel({
                     id={`page${i}`}
                     onClick={() => scrollToPage(i)}
                 />,
-            )
+            );
         }
 
-        return pages
+        return pages;
     }
 
     function previousSlide() {
         setCarouselIndex((carouselIndex) =>
             carouselIndex === 0 ? pageCount - 1 : carouselIndex - 1,
-        )
+        );
     }
 
     function nextSlide() {
         setCarouselIndex((carouselIndex) =>
             carouselIndex === pageCount - 1 ? 0 : carouselIndex + 1,
-        )
+        );
     }
 
     function scrollToPage(pageNumber: number) {
-        setCarouselIndex(pageNumber)
+        setCarouselIndex(pageNumber);
     }
 
     return (
         <div
             id="carouselRoot"
-            className="flex flex-col items-center justify-center gap-4 relative h-full w-full"
+            className="relative flex h-full w-full flex-col items-center justify-center gap-4"
             data-carousel
             {...props}
         >
@@ -65,7 +65,7 @@ export default function Carousel({
                 id="carouselDisplay"
             >
                 <div
-                    className="flex w-full h-full transition-transform duration-500 ease-out"
+                    className="flex h-full w-full transition-transform duration-500 ease-out"
                     id="carouselSlider"
                     style={{
                         transform: `translateX(${carouselIndex * -100}%)`,
@@ -77,19 +77,19 @@ export default function Carousel({
             </div>
 
             <div
-                className="items-center flex gap-2 py-2"
+                className="flex items-center gap-2 py-2"
                 id="carouselPagination"
             >
                 <ChevronLeft
                     id="carouselPreviousButton"
                     onClick={previousSlide}
-                    className="rounded-full pointer-events-auto cursor-pointer w-8 h-8 hover:text-accent transition-colors duration-150"
+                    className="pointer-events-auto h-8 w-8 cursor-pointer rounded-full transition-colors duration-150 hover:text-accent"
                     data-previous-button
                 >
                     previous
                 </ChevronLeft>
                 <div
-                    className="items-center flex gap-2 py-2"
+                    className="flex items-center gap-2 py-2"
                     data-carousel-pagination
                 >
                     {renderPagination()}
@@ -97,12 +97,12 @@ export default function Carousel({
                 <ChevronRight
                     id="carouselNextButton"
                     onClick={nextSlide}
-                    className="pointer-events-auto cursor-pointer w-8 h-8 hover:text-accent transition-colors duration-150"
+                    className="pointer-events-auto h-8 w-8 cursor-pointer transition-colors duration-150 hover:text-accent"
                     data-next-button
                 >
                     next
                 </ChevronRight>
             </div>
         </div>
-    )
+    );
 }
