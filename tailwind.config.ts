@@ -15,7 +15,10 @@ const config: Config = {
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",
                 background: "hsl(var(--background))",
-                foreground: "hsl(var(--foreground))",
+                foreground: {
+                    DEFAULT: "hsl(var(--foreground))",
+                    contrast: "hsl(var(--contrast-foreground)",
+                },
                 primary: {
                     DEFAULT: "hsl(var(--primary))",
                     foreground: "hsl(var(--primary-foreground))",
@@ -63,6 +66,11 @@ const config: Config = {
             animation: {
                 "accordion-down": "accordion-down 0.2s ease-out",
                 "accordion-up": "accordion-up 0.2s ease-out",
+            },
+            fontFamily: {
+                serif: ["var(--font-merriweather)"],
+                dancingScript: ["var(--font-dancing-script)"],
+                greatVibes: ["var(--font-great-vibes)"],
             },
         },
     },

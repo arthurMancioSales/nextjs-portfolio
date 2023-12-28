@@ -1,10 +1,7 @@
 import { Navbar } from "@/components/navbar/Navbar";
 import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { ThemeProvider } from "@/components/ThemeProvider/ThemeProvider";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Metadata } from "next";
+import { merriweather, dancingScript, greatVibes } from "./fonts";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -18,15 +15,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="system"
-                    enableSystem
-                >
-                    <Navbar />
-                    {children}
-                </ThemeProvider>
+            <body
+                className={`${dancingScript.variable} ${merriweather.className} ${greatVibes.variable}`}
+            >
+                {children}
             </body>
         </html>
     );

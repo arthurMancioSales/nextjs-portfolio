@@ -3,9 +3,12 @@ import { HTMLAttributes, forwardRef } from "react";
 
 const Section = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
     ({ className, children, ...props }, ref) => (
-        <div className="w-screen">
+        <div className="">
             <div
-                className={cn("h-screen max-w-7xl mx-auto py-16", className)}
+                className={cn(
+                    "w-screen h-screen max-w-7xl mx-auto py-[5vh]",
+                    className,
+                )}
                 {...props}
                 ref={ref}
             >
