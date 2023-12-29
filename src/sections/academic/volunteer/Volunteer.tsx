@@ -4,7 +4,7 @@ import ShineInside from "./projects/ShineInside";
 export default function Volunteer() {
     return (
         <>
-            <FutureSeeds />
+            {/* <FutureSeeds />
             <section className="h-[90vh] w-screen">
                 <iframe
                     src="https://www.theasys.io/viewer/yojCmz79JtQj5cjh8ewURw6BLiwczo"
@@ -13,7 +13,7 @@ export default function Volunteer() {
                     height={"100%"}
                 />
             </section>
-            <ShineInside />
+            <ShineInside /> */}
         </>
     );
 }

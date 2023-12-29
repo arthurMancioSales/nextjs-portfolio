@@ -18,9 +18,9 @@ export function Hero() {
                     <div className="text-foreground-contrast flex flex-col items-center">
                         <div
                             id="mouseIcon"
-                            className="relative h-12 w-8 rounded-[60px] border-[3px] border-solid border-foreground"
+                            className="relative h-12 w-8 rounded-[60px] border-[3px] border-solid border-white before:bg-white"
                         />
-                        <small>scroll down</small>
+                        <small className="text-white">scroll down</small>
                     </div>
                 </div>
             </Section>

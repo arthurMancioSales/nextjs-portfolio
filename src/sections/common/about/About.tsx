@@ -3,12 +3,12 @@ import { Section } from "@/components/ui/section/Section";
 import { GraduationCap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import arthur from "public/images/aboutSection/arthur.png";
-import frame from "public/images/aboutSection/aboutMeFrame.png";
+import arthur from "public/images/common/aboutSection/arthur.png";
+import frame from "public/images/common/aboutSection/aboutMeFrame.png";
 
 export function About() {
     return (
-        <div className="bg-[url('/images/aboutSection/aboutMeBackground.png')] bg-cover">
+        <div className="bg-[url('/images/common/aboutSection/aboutMeBackground.png')] bg-cover">
             <Section id="aboutSection" className="w-screen pt-12">
                 <div className="grid h-full grid-cols-2 pl-[3.2rem] pr-16">
                     <div className="col-span-1">

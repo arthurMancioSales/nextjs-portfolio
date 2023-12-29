@@ -7,7 +7,7 @@
     :root {
       --background: 43 72% 87%;
       --foreground: 0 0% 6%;
-      --contrast-foreground: 0 0% 94%;
+      --contrast-foreground: 0 0% 100%;
      
       --card: 0 0% 100%;
       --card-foreground: 0 0% 6%;
@@ -76,7 +76,7 @@ html, body {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
+    background-color: white;
     border-radius: 50%;
     opacity: 1;
     animation: wheel 2s infinite;
